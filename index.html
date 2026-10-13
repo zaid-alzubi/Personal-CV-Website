@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Zaid Al-Zu'bi CV</title>
-  <meta name="description" content="Personal CV website of Zaid Al-Zu'bi, a Computer Science student at Al-Ahliyya Amman University training in full-stack development with ASP.NET and Angular.">
+
+  <meta name="description" content="Personal CV website of Zaid Al-Zu'bi, a Computer Science student interested in software and full-stack development.">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -31,8 +42,9 @@
 
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-text">
+      <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-text">
           <p class="mono accent">Hello, I'm</p>
           <h1>Zaid Al-Zu'bi</h1>
           <p class="hero-title">Computer Science Student | Aspiring Full-Stack Developer</p>
@@ -44,9 +56,9 @@
         </div>
 
         <!-- Profile photo and code-style summary -->
-        <aside class="profile-panel" aria-label="Profile photo and quick summary">
-          <div class="profile-photo-wrap">
-            <img class="profile-photo" src="profile.jpg" alt="Portrait of Zaid Al-Zu'bi">
+        <aside class="col-lg-5 profile-panel" aria-label="Profile photo and quick summary">
+          <div class="profile-photo-wrap">           
+             <img class="profile-photo" src="profile.jpg" alt="Portrait of Zaid Al-Zu'bi">
             <span class="photo-badge"></span>
           </div>
           <div class="code-card">
@@ -63,6 +75,7 @@
           </div>
         </aside>
       </div>
+      </div>
     </section>
 
     <!-- ABOUT -->
@@ -73,14 +86,23 @@
           <p class="about-text">
             I'm a senior Computer Science student at Al-Ahliyya Amman University with hands-on experience in web development (ASP.NET MVC), Python, Power BI data analysis, and cybersecurity fundamentals through national-level CTF training. I contributed to a team ERP implementation project using Waterfall and PMI methodology. I'm now expanding my full-stack skills with ASP.NET and Angular, and studying for Microsoft Azure Fundamentals.
           </p>
-          <ul class="facts">
-            <li class="card"><span class="fact-label">Location</span>Amman, Jordan</li>
-            <li class="card"><span class="fact-label">University</span>Al-Ahliyya Amman University</li>
-            <li class="card"><span class="fact-label">Current training</span>Full Stack Development, 130 hours (PSUT)</li>
-            <li class="card"><span class="fact-label">Interests</span>Software development, project management</ul>
-        </div>
-      </div>
-    </section>
+<ul class="facts">
+  <li class="card">
+    <span class="fact-label">Location</span>Amman, Jordan
+  </li>
+  <li class="card">
+    <span class="fact-label">University</span>Al-Ahliyya Amman University
+  </li>
+  <li class="card">
+    <span class="fact-label">Current training</span>Full Stack Development, 130 hours (PSUT)
+  </li>
+  <li class="card">
+    <span class="fact-label">Interests</span>Software development, project management
+  </li>
+</ul>
+</div>
+</div>
+</section>
 
     <!-- SKILLS -->
     <section class="section" id="skills" aria-labelledby="skills-title">
@@ -197,32 +219,103 @@
             <ul class="tags"><li>Waterfall</li><li>PMI</li><li>EVM</li><li>Documentation</li></ul>
           </article>
 
-          <article class="card project-placeholder">
-            <h3>Next project</h3>
-            <a class="btn btn-ghost" href="#">GitHub link (coming soon)</a>
-          </article>
+         
+<article class="card project-featured">
+  <p class="date mono">2026 · Personal Project</p>
+  <h3>Personal CV Website</h3>
+  <p>
+    A responsive personal portfolio website built to showcase my
+    background, technical skills, education, training, and projects.
+    Developed using HTML, CSS, and Bootstrap.
+  </p>
+
+  <ul class="tags">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Bootstrap</li>
+    <li>Responsive Design</li>
+  </ul>
+
+  <div class="btn-row">
+    <a
+      class="btn btn-primary"
+      href="https://github.com/zaid-alzubi/Personal-CV-Website"
+      target="_blank"
+      rel="noopener noreferrer">
+      View on GitHub
+    </a>
+  </div>
+</article>
+
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title"><span class="mono accent">// </span>Contact</h2>
-        <ul class="contact-grid">
-          <li><a class="card contact-card" href="mailto:Zaidalzu3bi@outlook.com"><span class="fact-label">Email</span>Zaidalzu3bi@outlook.com</a></li>
-          <li><a class="card contact-card" href="tel:+962790953343"><span class="fact-label">Phone</span>+962 7 9095 3343</a></li>
-          <!-- TODO: replace # with your real LinkedIn profile URL -->
-          <li><a class="card contact-card" href="#" target="_blank" rel="noopener"><span class="fact-label">LinkedIn</span>Zaid Al-Zu'bi</a></li>
-        </ul>
+
+<!-- CONTACT -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <h2 id="contact-title">
+      <span class="mono accent">// </span>Contact
+    </h2>
+
+    <div class="row g-3">
+      <!-- Email -->
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100">
+          <span class="fact-label">Email</span>
+          <a href="mailto:Zaidalzu3bi@outlook.com">
+            Zaidalzu3bi@outlook.com
+          </a>
+        </div>
       </div>
-    </section>
+
+      <!-- Phone -->
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100">
+          <span class="fact-label">Phone</span>
+          <a href="tel:+962790953343">
+            +962 7 9095 3343
+          </a>
+        </div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100">
+          <span class="fact-label">LinkedIn</span>
+          <a
+            href="https://www.linkedin.com/in/zaid-alzu%27bi-1466a5342"
+            target="_blank"
+            rel="noopener noreferrer">
+            Zaid Al-Zu'bi
+          </a>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100">
+          <span class="fact-label">GitHub</span>
+          <a
+            href="https://github.com/zaid-alzubi"
+            target="_blank"
+            rel="noopener noreferrer">
+            github.com/zaid-alzubi
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Zaid Al-Zu'bi. Built with HTML and CSS.</p>
+<p>&copy; 2026 Zaid Al-Zu'bi. Built with HTML, CSS and Bootstrap.</p>
       <a href="#top">Back to top</a>
     </div>
   </footer>
